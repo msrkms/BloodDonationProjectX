@@ -25,7 +25,7 @@ public class Welcome extends AppCompatActivity {
 
 
         prefs = getPreferences(Context.MODE_PRIVATE);
-        if(prefs.getBoolean("firstRun",true)){
+        if(!prefs.getBoolean("firstRun",true)){
             System.out.println("2nd");
             materialButtonStartJourney.setVisibility(View.GONE);
         }else{
